@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Parent{
+    width: 100vw;
+    height:100vh;
+    background-image: url(.//huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);    
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-origin: cover;
+    background-size: cover;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+.Right-side{
+    height: 100%;
+    grid-template-rows: auto 1fr;
+}
+.logo{
+    background-image: url(logo.svg);
+    margin: 50px ;
+    width: 200px;
+    height: 4%;
+    background-size: 200px;
+}
+.image{
+    background-image: url(.//huddle-landing-page-with-single-introductory-section-master/images/illustration-mockups.svg);
+    background-size: cover;
+    margin: 90px 40px;
+    width: 648px;
+    height: 463px;
+}
+.Left-side{
+    margin: 200px 60px 0 30px;
+    color: white;
+    /* position: relative; */
+}
+.text_one{
+    font-family: "Poppins", serif;
+    font-size: 47px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.text_two{
+    font-family: "Open Sans";
+    font-size: 21px;
+    font-weight: 400;
+}
+.Register-button{
+    font-family: "Poppins", serif;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    color:hsl(257, 40%, 49%) ;
+    width: 220px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px 1px black;
+}
+.Register-button:hover{
+    transition: 1s;
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+.links{
+    margin-top: 40px;
+    display: flex;
+}
+.facebook ,.twitter,.instagram{
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin: 400px 20px 10px 0;
+    padding: 20px;
+    /* filter: invert(100%); */
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.facebook{
+    background-image: url(facebook.svg);
+    fill: blue;
+    margin-left: 430px;
+}
+.twitter{
+    background-image: url(twitter.svg);
+}
+.instagram{
+    background-image: url(instagram.svg);
+    
+    
+}
+.facebook:hover ,.twitter:hover,.instagram:hover{
+    cursor: pointer;
+    /* background-color:hsl(300, 69%, 71%) ; */
+    color: blue;
+    border-color:hsl(300, 69%, 71%) ;
+    background-blend-mode:multiply ;
+    transition: 1s;
+    fill: hsl(300, 69%, 71%);
+}
